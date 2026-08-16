@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FlowRepair verified SQL repair demonstration video">
+  <title>FlowRepair Demo</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f5f4;
+      color: #17211e;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-width: 320px; }
+    header {
+      min-height: 116px;
+      padding: 28px clamp(20px, 5vw, 72px) 22px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      background: #17211e;
+      color: white;
+    }
+    h1 { margin: 0; font-size: clamp(32px, 5vw, 54px); line-height: 1; letter-spacing: 0; }
+    header p { margin: 8px 0 0; color: #c8d6d0; font-size: 16px; }
+    header a { color: white; text-underline-offset: 4px; white-space: nowrap; }
+    main { padding: 28px clamp(20px, 5vw, 72px) 48px; }
+    .player {
+      width: min(100%, 1280px);
+      margin: 0 auto;
+    }
+    video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0d1512;
+      border: 1px solid #c8cfcc;
+      border-radius: 6px;
+    }
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 14px;
+      color: #51605b;
+      font-size: 14px;
+    }
+    .meta strong { color: #2d6554; }
+    @media (max-width: 680px) {
+      header { align-items: start; flex-direction: column; }
+      .meta { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>FlowRepair</h1>
+      <p>Verified multi-resolution repair of policy-violating SQL</p>
+    </div>
+    <a href="https://github.com/charliec05/flowrepair-demo-assets/releases/download/v1/flowrepair-demo.mp4">Download MP4</a>
+  </header>
+  <main>
+    <div class="player">
+      <video controls preload="metadata">
+        <source src="flowrepair-demo.mp4" type="video/mp4">
+      </video>
+      <div class="meta">
+        <span><strong>3:37</strong> continuous real-browser walkthrough</span>
+        <span>H.264 / AAC / 1280x720 / English captions</span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
